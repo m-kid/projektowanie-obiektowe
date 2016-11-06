@@ -10,15 +10,12 @@ Telefon.prototype.printInfo = function() {
 
     var self = this.cena
     function getWarrantyCost () {
-        var warranty = 0.1 * self;
-        console.log(warranty);
-        return
+        return 0.1 * self;
     };
-getWarrantyCost();
+var warranty = getWarrantyCost();
 
-var wynikWarranty = getWarrantyCost();
 
-    console.log("Marka telefonu to " + this.marka + ", kolor to " + this.kolor + ", a cena to " + this.cena + ". Cena przedłużonej gwarancji wynosi " + wynikWarranty + ".");
+    console.log("Marka telefonu to " + this.marka + ", kolor to " + this.kolor + ", a cena to " + this.cena + ". Cena przedłużonej gwarancji wynosi " + warranty + ".");
 };
 
 
